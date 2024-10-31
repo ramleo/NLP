@@ -1,0 +1,3 @@
+1. Electronics: first 20 main-pages extracted.
+2. Mobiles: first 10 main-pages extracted, products extracted 240.
+3. Clothes: first 6 main-pages extracted, products extracted 200.
