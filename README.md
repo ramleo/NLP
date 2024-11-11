@@ -11,7 +11,7 @@ Steps:
      - Check for duplicates
      - Check for integrity of variable
      - Check for imbalance
-  - flipkart clothes dataset: train dataset
+   - flipkart clothes dataset: train dataset
      - Check head
      - Check shape of dataset
      - Check for data type and memory
@@ -19,7 +19,7 @@ Steps:
      - Check for duplicates
      - Check for integrity of variable
      - Check for imbalance
-  - flipkart clothes dataset: validation dataset
+   - flipkart clothes dataset: validation dataset
      - Check head
      - Check shape of dataset
      - Check for data type and memory
