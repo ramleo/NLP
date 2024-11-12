@@ -125,14 +125,194 @@ Steps:
        - Create word cloud and display
        - Top 10 words
 
-5. Performed additional text preprocessing
-  
-6. Created word vectors on corpus which did not include emojis
-  
-7. Created word vectors on corpus which included emojis (emojis were translated into text)
-  
-8. Created word vectors on corpus which did not include stopwords
-  
+5. Performed additional text preprocessing:
+   - Remove missing values:
+     - Import libraries
+     - Import reviews train dataset
+     - Import reviews validation dataset
+     - Train dataset:
+       - Remove null values
+       - Check shape
+       - Check for null values
+     - Validation dataset:
+       - Remove null values
+       - Check shape
+       - Check for null values
+
+6. Created word vectors on corpus which did not include emojis, used count, tf-idf, gensim manual and gensim google pretrained vectorizers
+   - Corpus: Emoji - No
+     - Import libraries
+     - Count Vectorizer
+       - Count Vectorizer - Initiation
+       - Count Vectorizer "fit_transform"
+       - Dictionary of tokenized words
+       - Count vectorizer array
+       - Count vectorizer array shape
+       - Shape of single datapoint
+       - Checking for non-zero entries
+     - TF-IDF Vectorizer
+       - Tf-Idf Vectorizer - Initiation
+       - Tf-Idf Vectorizer "fit_transform"
+       - Dictionary of tokenized words
+       - Tf-Idf array
+       - Tf-Idf array shape
+       - Shape of single datapoint
+       - Checking for non-zero entries
+     - Manual Word2vec
+       - Convert corpus to list of lists
+       - Extract specific indices from corpus list
+       - Perform word2vec on corpus
+       - Check 20 words in the word2vec corpus vocabulary
+       - Check length of vocabulary
+       - Create word2vec function to assign vectors to words
+       - Apply word2vec to the corpus
+       - Row-wise average word2vec
+         - Create numpy array of averaged word2vec
+         - Check shape of numpy array
+       - Column-wise average word2vec
+         - Calculating max length
+         - Experiment with single datapoint
+         - Create custom_padding function
+         - Apply custom_padding function
+         - Convert list to numpy array
+         - Check shape of numpy array
+    - Pre-trained Word2vec
+       - Google trained word2vec
+       - Check 20 words in the word2vec corpus vocabulary
+       - Check length of vocabulary
+       - Create word2vec function to assign vectors to words
+       - Apply word2vec to the corpus
+       - Check for empty list in normal_pt_word2vec
+       - Remove empty lists from normal_pt_word2vec
+       - Row-wise average word2vec
+         - Create numpy array of averaged word2vec
+         - Check shape of numpy array
+       - Column-wise average word2vec
+         - Check for shapes
+         - Check for inconsistency
+         - Calculating max length
+         - Experiment with single datapoint
+         - Create custom_padding function
+         - Apply custom_padding function
+         - Convert list to numpy array
+         - Check shape of numpy array 
+
+7. Created word vectors on corpus which included emojis (emojis were translated into text), tf-idf, gensim manual and gensim google pretrained vectorizers
+   - Corpus: Emoji - Yes
+     - Import libraries
+     - Count Vectorizer
+       - Count Vectorizer - Initiation
+       - Count Vectorizer "fit_transform"
+       - Dictionary of tokenized words
+       - Count vectorizer array
+       - Count vectorizer array shape
+       - Shape of single datapoint
+       - Checking for non-zero entries
+     - TF-IDF Vectorizer
+       - Tf-Idf Vectorizer - Initiation
+       - Tf-Idf Vectorizer "fit_transform"
+       - Dictionary of tokenized words
+       - Tf-Idf array
+       - Tf-Idf array shape
+       - Shape of single datapoint
+       - Checking for non-zero entries
+     - Manual Word2vec
+       - Convert corpus to list of lists
+       - Extract specific indices from corpus list
+       - Perform word2vec on corpus
+       - Check 20 words in the word2vec corpus vocabulary
+       - Check length of vocabulary
+       - Create word2vec function to assign vectors to words
+       - Apply word2vec to the corpus
+       - Row-wise average word2vec
+         - Create numpy array of averaged word2vec
+         - Check shape of numpy array
+       - Column-wise average word2vec
+         - Calculating max length
+         - Experiment with single datapoint
+         - Create custom_padding function
+         - Apply custom_padding function
+         - Convert list to numpy array
+         - Check shape of numpy array
+    - Pre-trained Word2vec
+       - Google trained word2vec
+       - Check 20 words in the word2vec corpus vocabulary
+       - Check length of vocabulary
+       - Create word2vec function to assign vectors to words
+       - Apply word2vec to the corpus
+       - Check for empty list in normal_pt_word2vec
+       - Remove empty lists from normal_pt_word2vec
+       - Row-wise average word2vec
+         - Create numpy array of averaged word2vec
+         - Check shape of numpy array
+       - Column-wise average word2vec
+         - Check for shapes
+         - Check for inconsistency
+         - Calculating max length
+         - Experiment with single datapoint
+         - Create custom_padding function
+         - Apply custom_padding function
+         - Convert list to numpy array
+         - Check shape of numpy array
+           
+8. Created word vectors on corpus which did not include stopwords, tf-idf, gensim manual and gensim google pretrained vectorizers
+   - Corpus: Stopwords - No
+     - Import libraries
+     - Count Vectorizer
+       - Count Vectorizer - Initiation
+       - Count Vectorizer "fit_transform"
+       - Dictionary of tokenized words
+       - Count vectorizer array
+       - Count vectorizer array shape
+       - Shape of single datapoint
+       - Checking for non-zero entries
+     - TF-IDF Vectorizer
+       - Tf-Idf Vectorizer - Initiation
+       - Tf-Idf Vectorizer "fit_transform"
+       - Dictionary of tokenized words
+       - Tf-Idf array
+       - Tf-Idf array shape
+       - Shape of single datapoint
+       - Checking for non-zero entries
+     - Manual Word2vec
+       - Convert corpus to list of lists
+       - Extract specific indices from corpus list
+       - Perform word2vec on corpus
+       - Check 20 words in the word2vec corpus vocabulary
+       - Check length of vocabulary
+       - Create word2vec function to assign vectors to words
+       - Apply word2vec to the corpus
+       - Row-wise average word2vec
+         - Create numpy array of averaged word2vec
+         - Check shape of numpy array
+       - Column-wise average word2vec
+         - Calculating max length
+         - Experiment with single datapoint
+         - Create custom_padding function
+         - Apply custom_padding function
+         - Convert list to numpy array
+         - Check shape of numpy array
+    - Pre-trained Word2vec
+       - Google trained word2vec
+       - Check 20 words in the word2vec corpus vocabulary
+       - Check length of vocabulary
+       - Create word2vec function to assign vectors to words
+       - Apply word2vec to the corpus
+       - Check for empty list in normal_pt_word2vec
+       - Remove empty lists from normal_pt_word2vec
+       - Row-wise average word2vec
+         - Create numpy array of averaged word2vec
+         - Check shape of numpy array
+       - Column-wise average word2vec
+         - Check for shapes
+         - Check for inconsistency
+         - Calculating max length
+         - Experiment with single datapoint
+         - Create custom_padding function
+         - Apply custom_padding function
+         - Convert list to numpy array
+         - Check shape of numpy array
+           
 9. Created classes like cleancorpustransformer and wordvectors
   
 10. Performed class profiling and snakeviz visualization on cleancorpustransformer and wordvectors classes
